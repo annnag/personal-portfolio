@@ -1,0 +1,53 @@
+@import "../../vars.css";
+
+.container {
+  background-color: var(--color-text);
+  display: flex;
+  gap: 48px;
+  margin: 48px 0 0 0;
+  z-index: 3;
+  position: relative;
+  padding: 48px 10%;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 40%;
+}
+
+.left p {
+  color: var(--color-primary);
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.subtitle {
+  font-size: 24px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+}
+
+.contact {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.contact svg {
+  fill: var(--color-primary);
+}
+
+.contact a {
+  text-decoration: none;
+  color: var(--color-primary);
+}

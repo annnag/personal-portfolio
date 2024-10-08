@@ -1,0 +1,62 @@
+@import "../../vars.css";
+
+.container {
+  position: relative;
+  z-index: 3;
+  margin: 0 48px;
+  padding: 0 48px 48px 48px;
+}
+
+.title {
+  color: var(--color-text);
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.contentContainer {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 150px);
+  grid-gap: 8px;
+  justify-content: space-between;
+}
+
+.skillItem {
+  background-color: var(--color-primary);
+  padding: 8px;
+  height: 110px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  transition: 0.3s;
+}
+
+.skillItem:hover {
+  background-color: var(--color-secondary);
+  transform: scale(1.1);
+}
+
+.skillItem svg {
+  fill: var(--color-text);
+  width: 32px;
+  height: 32px;
+}
+
+.skillItem p {
+  color: var(--color-text);
+  font-family: var(--font-jetbrain);
+}
+
+.subtitle {
+  color: var(--color-text);
+}
+
+@media screen and (max-width: 930px) {
+  .contentContainer {
+    flex-direction: column;
+  }
+}

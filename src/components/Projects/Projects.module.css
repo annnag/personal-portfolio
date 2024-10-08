@@ -1,0 +1,94 @@
+@import "../../vars.css";
+
+.container {
+  position: relative;
+  z-index: 3;
+  margin: 0 48px;
+  padding: 48px 48px 0 48px;
+}
+
+.title {
+  color: var(--color-text);
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.contentContainer {
+  display: flex;
+  width: 100%;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  margin-top: 8px;
+}
+
+.projectContainer {
+  background: rgb(192, 214, 223);
+  background: linear-gradient(
+    180deg,
+    rgba(192, 214, 223, 0.9) 0%,
+    rgba(234, 234, 234, 0.6) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+
+  padding: 16px;
+  width: 300px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex-grow: 1;
+}
+
+.coverImg {
+  width: 100%;
+  min-width: 200px;
+  max-width: 300px;
+
+  border-radius: 16px;
+  background-color: bisque;
+  object-fit: cover;
+  align-self: center;
+}
+
+.projectTitle,
+.projectDescription {
+  color: var(--color-text);
+}
+
+.projectTitle {
+  font-size: x-large;
+}
+
+.tagContainer {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 8px 0;
+}
+
+.tag {
+  color: var(--color-primary);
+  background-color: var(--color-dark);
+  padding: 2px 8px;
+  border-radius: 8px;
+  font-family: var(--font-jetbrain);
+}
+
+.links {
+  display: flex;
+  gap: 16px;
+}
+
+.links a {
+  text-decoration: none;
+  color: var(--color-text);
+  display: flex;
+  align-items: center;
+}
+
+.links a svg {
+  fill: var(--color-text);
+  margin-right: 2px;
+}

@@ -1,0 +1,152 @@
+@import "../../vars.css";
+
+.container {
+  position: relative;
+  display: flex;
+  z-index: 1;
+  align-items: center;
+  justify-content: space-between;
+  margin: 48px 5% 0 5%;
+  gap: 48px;
+}
+
+.content {
+  display: flex;
+  z-index: 1;
+  flex-direction: column;
+  align-items: center;
+  color: var(--color-text);
+  width: 100%;
+}
+
+.title {
+  font-size: 64px;
+  font-weight: 900;
+  font-family: var(--font-roboto);
+  background: var(--color-text);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid var(--color-dark); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 24px auto 24px auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 515px;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--color-dark);
+  }
+}
+
+.content::after {
+  content: "";
+  display: block;
+  width: 515px;
+}
+
+.description {
+  font-size: 20px;
+}
+
+.contactBtn {
+  text-decoration: none;
+  background-color: var(--color-dark);
+  color: var(--color-bg);
+  border-radius: 100px;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 14px 16px;
+  margin-top: 24px;
+  margin-left: -4px;
+  box-shadow: 0 0 4px;
+}
+
+.heroImg {
+  min-width: 300px;
+  max-width: 600px;
+  z-index: 1;
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+.topBlur {
+  position: absolute;
+  width: 25vw;
+  height: 25vw;
+  min-height: 250px;
+  min-height: 250px;
+  top: -70px;
+  left: 60vw;
+  border-radius: 764px;
+  background: var(--color-secondary);
+  filter: blur(50px);
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.bottomBlur {
+  position: absolute;
+  width: 70vw;
+  height: 50vw;
+  min-width: 250px;
+  min-height: 250px;
+  top: 246px;
+  left: -25vw;
+  border-radius: 764px;
+  background: var(--color-secondary);
+  filter: blur(100px);
+  z-index: 0;
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 930px) {
+  .container {
+    flex-direction: column-reverse;
+    gap: 24px;
+  }
+
+  .content {
+    align-items: center;
+  }
+
+  .name {
+    display: block;
+  }
+
+  .title {
+    border: none;
+    animation: none;
+    text-align: center;
+  }
+}

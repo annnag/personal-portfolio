@@ -1,0 +1,92 @@
+@import "../../vars.css";
+
+.container {
+  background: var(--color-secondary);
+  position: relative;
+  z-index: 3;
+  margin: 48px;
+  border-radius: 20px;
+  padding: 48px;
+}
+
+.title {
+  color: var(--color-text);
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.aboutImg {
+  width: 40%;
+}
+
+.content {
+  margin-left: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+}
+
+.itemContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 10px;
+  gap: 8px;
+  padding: 8px;
+}
+
+.itemContainer:hover {
+  background: linear-gradient(90deg, #e8dab2, 50%, transparent);
+}
+
+.itemContainer svg {
+  width: 50px;
+  height: 50px;
+  fill: var(--color-dark);
+}
+
+.itemContent {
+  width: 100%;
+}
+
+.itemTitle {
+  color: var(--color-text);
+  font-size: 20px;
+}
+
+.itemDescription {
+  color: var(--color-text);
+}
+
+@media screen and (max-width: 930px) {
+  .container {
+    padding: 16px;
+    margin: 32px 16px;
+  }
+  
+  .content {
+    margin: 0;
+  }
+
+  .contentContainer {
+    flex-direction: column;
+  }
+
+  .computer {
+    display: none;
+  }
+
+  .itemContainer {
+    flex-direction: column;
+  }
+
+  .itemTitle {
+    text-align: center;
+  }
+}
