@@ -8,12 +8,13 @@ export const Computer = () => {
 
   useEffect(() => {
     const onScroll = () => setOffset(window.scrollY);
+    // clean up code
     window.removeEventListener("scroll", onScroll);
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const computer = useGLTF("../assets/about/apple_desktop/scene.gltf");
+  const computer = useGLTF("../assets/apple_desktop/scene.gltf");
   return (
     <mesh>
       <hemisphereLight intensity={3} groundColor={"black"} />
