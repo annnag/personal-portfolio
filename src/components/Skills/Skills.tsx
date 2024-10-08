@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 import styles from "./Skills.module.css";
 import { DiJqueryLogo } from "react-icons/di";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";

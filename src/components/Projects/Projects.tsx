@@ -1,4 +1,3 @@
-import React from "react";
 import { getImageUrl } from "../../utils";
 import styles from "./Projects.module.css";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";

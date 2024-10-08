@@ -6,7 +6,7 @@ import "./index.css";
 import "@fontsource/jetbrains-mono";
 import "@fontsource/roboto";
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <App />
   </React.StrictMode>

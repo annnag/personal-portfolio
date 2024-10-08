@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 import styles from "./About.module.css";
 import { FaServer } from "react-icons/fa6";
 import { MdDesignServices } from "react-icons/md";
