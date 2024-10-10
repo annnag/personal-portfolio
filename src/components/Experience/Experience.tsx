@@ -49,7 +49,7 @@ const experience = [
     ],
   },
   {
-    date: "September 2020 - July 2022",
+    date: "September 2017 - April 2022",
     iconUrl: "experience/utLogo.png",
     title: "University of Toronto",
     points: ["GPA: 3.82/4.0", "Dean's List Scholar"],
